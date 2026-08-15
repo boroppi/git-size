@@ -78,7 +78,7 @@ Options:
       --config <path>        Read configuration from a specific JSON file
 
 Examples:
-  npx git-size
+  npx gitsize
   git-size --largest 20
   git-size --history
   git-size --json

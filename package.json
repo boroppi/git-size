@@ -1,5 +1,5 @@
 {
-  "name": "git-size",
+  "name": "gitsize",
   "version": "0.1.0",
   "description": "Understand what's making your Git repository heavy.",
   "license": "MIT",
