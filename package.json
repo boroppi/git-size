@@ -1,0 +1,51 @@
+{
+  "name": "git-size",
+  "version": "0.1.0",
+  "description": "Understand what's making your Git repository heavy.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "git-size": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "repository",
+    "size",
+    "developer-tools",
+    "git-lfs"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.cli.json",
+    "typecheck": "tsc -p tsconfig.cli.json --noEmit",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepublishOnly": "npm run build && npm test && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boroppi/git-size"
+  },
+  "bugs": {
+    "url": "https://github.com/boroppi/git-size/issues"
+  },
+  "homepage": "https://github.com/boroppi/git-size",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.9.6",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^3.0.0"
+  }
+}

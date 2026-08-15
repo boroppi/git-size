@@ -1,0 +1,11 @@
+export { analyzeRepository, getLimitViolations } from './analysis/files.js';
+export { parseCliArgs, helpText } from './args.js';
+export { loadConfig, mergeConfig } from './config.js';
+export { analyzeHistory } from './git/history.js';
+export { detectRepository, listTrackedFiles } from './git/repository.js';
+export { renderJson } from './output/json.js';
+export { renderTerminal } from './output/terminal.js';
+export { classifyFile, aggregateFileTypes, extensionOf } from './analysis/fileTypes.js';
+export { aggregateDirectories } from './analysis/directories.js';
+export { formatBytes, parseSize } from './utils/sizes.js';
+export type * from './types.js';
